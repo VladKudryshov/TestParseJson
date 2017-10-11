@@ -28,6 +28,7 @@ import static org.mockito.Mockito.when;
 public class GsonParserTest {
 
     private static final int ACTUAL_AGE = 21;
+    public static final String ACTUAL_DATE = "10 Oct 2017, 18:57:55";
     private IHttpClient mHttpClient;
 
     @Before
@@ -65,6 +66,7 @@ public class GsonParserTest {
         assertEquals(user.getFirstName(), "Tracey");
         assertEquals(user.getSurName(), "Lynch");
         assertEquals(user.getAge(), ACTUAL_AGE);
+        assertEquals(user.getLastSession(), ACTUAL_DATE);
 
     }
 }

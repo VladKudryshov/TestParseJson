@@ -2,5 +2,6 @@
   "id": 3,
   "firstName": "Tracey",
   "surName": "Lynch",
-  "age": 21
+  "age": 21,
+  "lastSession": 1507651075641
 }
