@@ -20,7 +20,7 @@ public class UserListJsonParser implements IUserListParser {
     @Override
     public IUserList parse() throws Exception {
         final JSONArray jsonArray = new JSONArray(mResource);
-        final List<IUser> userList = new ArrayList<IUser>();
+        final List<IUser> userList = new ArrayList<>();
 
         for (int i = 0; i < jsonArray.length(); i++) {
             userList.add(new UserJson(jsonArray.getJSONObject(i)));

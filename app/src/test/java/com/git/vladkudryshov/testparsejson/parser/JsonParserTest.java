@@ -28,7 +28,7 @@ import static org.mockito.Mockito.when;
 public class JsonParserTest {
 
     private static final int ACTUAL_AGE = 21;
-    public static final String ACTUAL_DATE = "10 Oct 2017, 18:57:55";
+    private static final String ACTUAL_DATE = "10 Oct 2017, 18:57:55";
     private IHttpClient mHttpClient;
 
     @Before

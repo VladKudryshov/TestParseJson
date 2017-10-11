@@ -5,11 +5,11 @@ import com.git.vladkudryshov.testparsejson.parser.IUserList;
 
 import java.util.List;
 
-public class UserGsonList implements IUserList {
+class UserGsonList implements IUserList {
 
-    private List<IUser> mUserGsonList;
+    private final List<IUser> mUserGsonList;
 
-    public UserGsonList(final List<IUser> pUsersLists) {
+    UserGsonList(final List<IUser> pUsersLists) {
         mUserGsonList = pUsersLists;
     }
 

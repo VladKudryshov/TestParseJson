@@ -8,7 +8,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class UserGson implements IUser {
+class UserGson implements IUser {
 
     @SerializedName("id")
     private long mId;

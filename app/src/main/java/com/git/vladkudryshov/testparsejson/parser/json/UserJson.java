@@ -10,7 +10,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class UserJson implements IUser {
+class UserJson implements IUser {
 
     private static final String AGE = "age";
     private static final String SUR_NAME = "surName";
@@ -19,7 +19,7 @@ public class UserJson implements IUser {
     private static final String LAST_SESSION = "lastSession";
     private final JSONObject mUserObject;
 
-    public UserJson(final JSONObject pPUserObject) {
+    UserJson(final JSONObject pPUserObject) {
         mUserObject = pPUserObject;
     }
 

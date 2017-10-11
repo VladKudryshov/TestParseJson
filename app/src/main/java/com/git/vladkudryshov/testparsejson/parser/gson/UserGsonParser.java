@@ -31,7 +31,7 @@ public class UserGsonParser implements IUserParser {
             }
         };
 
-        Gson gson = new GsonBuilder()
+        final Gson gson = new GsonBuilder()
                 .registerTypeAdapter(Date.class, deser).create();
         return gson.fromJson(mSource,UserGson.class);
     }
